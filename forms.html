@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+</head>
+    <!-- form tag is used to create a form in HTML. It allows users to input data and submit it to a 
+    server for processing. The form can contain various input elements such as text fields, checkboxes, 
+    radio buttons, and submit buttons. The action attribute specifies the URL where the form data will
+     be sent when submitted, and the method attribute defines the HTTP method (GET or POST) used for 
+     submission. Forms are essential for collecting user information and facilitating interactions on
+    web pages.
+
+    we written label tag instead of any heading or paragraph tag because it is used to define a label
+     for an input element. It provides a user-friendly description or prompt for the associated input
+      field, helping users understand what information is expected. The "for" attribute in the label
+       tag links it to the corresponding input element by matching the input's "id" attribute, enhancing 
+       accessibility and usability in forms.
+    
+       input tag we can use type attribute to specify the type of input field, such as text, password, email,
+
+       value attribute in input tag is used to specify the initial value of the input field, which can be pre-filled or set by default. 
+       It represents the data that will be sent to the server when the form is submitted.
+
+       for tag is used to associate a label with a specific form control, enhancing accessibility and usability.
+
+       type attribute in input tag specifies the type of input field, such as text, password, email, number, radio,
+     checkbox, etc., determining the kind of data the user can enter.
+
+     id and for attributes are used together to associate a label with a specific input element, improving accessibility and usability in forms.
+
+       in radio button we can use name attribute to group related radio buttons together, allowing users to select
+        only one option from the group otherwise they can select multiple options. The value attribute specifies the value that will be sent to the server
+         when the form is submitted, representing the selected option within the group of radio buttons. -->
+
+      
+<body>
+
+    <form action="resume.html" >
+        <label for="" >First Name</label>
+        <input type="text" minlength="3" maxlength="10" placeholder="Enter first name" required />
+        
+        <!-- value attribute in textarea tag is used to specify the initial content or text that will be
+        displayed inside the textarea when the page loads. It allows you to pre-fill the textarea with 
+        default text, which can be edited by the user before submission. but the value in radio buttons, checkbox is specified by the value attribute -->
+
+         <label for="" >Middle Name</label>
+        <input type="text" minlength="3" maxlength="10" value="Korada" required />
+
+
+        <label for="" >Last Name</label>
+        <input type="text" minlength="3" maxlength="10" disabled />
+
+        <br/><br/>
+        <label for="" >Email</label>
+        <input type="email" required />
+
+        <br/>
+        <br/>
+
+        <label for="" >Password</label>
+        <input type="password" required />
+
+        <br/>
+        <br/>
+
+        <label for="">Phone Number</label>
+        <input type="number" required />
+
+        <br/><br/>
+
+        <label for="">Select Your Gender   :</label>
+
+        <label for="male">Male</label>
+        <input id="male" name="gender" type="radio"  value="Male"/> 
+
+        <label for="female">Female</label>
+        <input id="female" name="gender" type="radio" value="Female"/> 
+
+        <label for="others">Others</label>
+        <input id="others" name="gender" type="radio" value="Others"/> 
+
+        <br/><br/>
+
+        <label for="">Enter Color</label>
+        <input type="color" />
+
+        <br/><br/>
+
+        <label for="">Enter Date</label>
+        <input type="date" />
+
+        <br/><br/>
+
+        <label for="">select payment option</label>
+        <select name="" id="">
+            <option value="Cash on Delivery">Cash on Delivery</option>
+            <option value="Credit Card">Credit Card</option>
+            <option value="Debit Card">Debit Card</option>
+            <option value="UPI">UPI</option>
+            <option value="Net Banking">Net Banking</option>
+    
+        </select>
+    <br/><br/>
+    <label for="">Enter your feedback</label>
+    <textarea name="" id="" cols="30" rows="10" value="feedback"></textarea>
+
+    <br><br>
+    
+    <!-- value attribute in checkbox is used to specify the value that will be sent to the 
+    server when the checkbox is checked. It represents the selected option or choice 
+    associated with the checkbox input. -->
+
+
+    <p>Select the known languages</p>
+    <label for="English">English</label>
+    <input type="checkbox" name="" id="English" value="English" />
+    <label for="Hindi">Hindi</label>
+    <input type="checkbox" name="" id="Hindi" value="Hindi" checked/>
+    <label for="Telugu">Telugu</label>
+    <input type="checkbox" name="" id="Telugu" value="Telugu" />
+
+    <br><br>
+
+    <input type="reset" value="Reset" />
+    <input type="submit" value="Submit" />
+
+    </form>
+</body>
+</html>

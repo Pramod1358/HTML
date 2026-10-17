@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+</head>
+
+    <!-- table tag is used to create a table in HTML. It consists of rows and columns, where each row is defined by the <tr> tag, 
+        and each cell within a row is defined by the <td> tag for data cells or <th> tag for header cells. The table can be styled using
+         CSS to enhance its appearance. and thead tbody and tfoot can also be used
+        There is no need to write thead , body and tfoot tags explicitly if you want to add any css for the tags 
+        then it will be easy to apply styling-->
+
+    <!-- caption tag is used to add a title or caption to the table. It provides a brief description of the table's 
+    content and is typically displayed above the table. The caption can be styled using CSS to match the overall 
+    design of the webpage. -->
+
+    <!-- colgroup tag is used to group columns in a table and apply styles or attributes to them collectively. -->
+<body>
+    <table border="1">
+        <caption>
+            This my first table
+        </caption>
+        <colgroup>
+            <col span="4" style="background-color: lightgray;">
+            
+        </colgroup>
+        <thead>
+        <!-- colspan attribute is used to specify the number of columns a cell should span across. It
+         allows a cell to extend horizontally and occupy multiple columns in a table. This is useful 
+         for creating headers or cells that need to cover more than one column, providing better 
+         organization and clarity in the table's structure. -->
+        <tr>
+            <td colspan="2">Header 1</td>
+            <td>Header 2</td>
+            <td>Header 3</td>
+        </tr>
+        </thead>
+        <tbody>
+
+        <tr>
+            <!-- rowspan attribute is used to specify the number of rows a cell should span across. It
+             allows a cell to extend vertically and occupy multiple rows in a table. This is useful 
+             for creating cells that need to cover more than one row, providing better organization 
+             and clarity in the table's structure. -->
+            <td rowspan="2">Row 1, Cell 1</td>
+            <td>Row 1, Cell 2</td>
+            <td>Row 1, Cell 3</td>
+        </tr>
+        </tbody>
+        <tfoot>
+        <tr>
+            <td>Row 2, Cell 1</td>
+            <td>Row 2, Cell 2</td>
+            <td>Row 2, Cell 3</td>
+        </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

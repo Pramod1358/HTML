@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pramod's Resume</title>
+</head>
+
+   <!-- sematics are used to give meaning to the content of the web page. 
+   It helps search engines and assistive technologies understand the structure and purpose of the content
+   , improving accessibility and SEO. Semantic elements provide context and convey the intended meaning 
+   of the content, making it easier for users to navigate and comprehend the information presented on 
+   the web page.
+
+   header tag is used to define the header section of a web page or a specific section within the page.
+    It typically contains introductory content, such as a logo, navigation menu, or heading, and is often
+    placed at the top of the page. The header element helps organize the content and provides a consistent
+    structure for the page, making it easier for users to identify and access important information.
+
+    section tag is used to define a thematic grouping of content within a web page. It represents a distinct
+     section or area that is related to a specific topic or purpose. The section element helps organize the 
+     content, making it easier for users to navigate and understand the structure of the page. It can contain
+      headings, paragraphs, images, and other elements that are relevant to the section's theme.
+
+      article tag is used to define a self-contained piece of content that can be independently distributed or reused.
+
+      footer tag is used to define the footer section of a web page or a specific section within the page. It typically 
+      contains information such as copyright notices, contact details, navigation links, or other relevant content that 
+      appears at the bottom of the page. The footer element helps provide closure to the content and offers additional context or 
+      resources for users. -->
+
+<body>
+    <header id="header">
+        <table>
+            <tr>
+                <td>
+                    <a href="https://www.linkedin.com/in/pramod-korada">
+                    <img
+                    style="float: left"
+                    src="./images/img_girl.jpg" 
+                    alt="Pramod's Photo"
+                    width="300" />
+                    </a>
+                </td>
+                <td> <h1>Pramod Korada</h1> 
+                    <p><a href="https://github.com/pramod1358" target="_blank"><strong>Passionate Developer</strong></a></p>
+                    <p> i love devops</p>
+                <a target="_blank" href="#connect"> <p>Click here to connect</p></a>
+                </td>
+            </tr>
+        </table>
+    </header>
+   
+    <hr/>
+    <section id="education">
+        <h2>Education</h2>
+            <table border="1">
+                <tr>
+                    <td>Degree</td>
+                    <td>Institution</td>
+                    <td>Percentage</td>
+                </tr>
+                <tr>
+                    <td>SSC</td>
+                    <td>KKR's Gowtham public school</td>
+                    <td>98.16</td>
+                </tr>
+                <tr>
+                    <td>HSC</td>
+                    <td>Narayana Junior College</td>
+                    <td>92.6</td>
+                </tr>
+                <tr>
+                    <td>B.Tech</td>
+                    <td>KL University</td>
+                    <td>9.33</td>
+                </tr>
+            </table>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+            <ul>
+                <article>
+                <li>Oracle
+                <p><i>Devops Engineer  :</i></p>
+                <ul>
+                    <li>Worked on CI/CD pipelines using Jenkins and GitHub Actions</li>
+                    <li>Implemented Infrastructure as Code (IaC) using Terraform and Ansible</li>
+                    <li>Managed containerized applications using Docker and Kubernetes</li>
+                    <li>Monitored system performance and resolved issues using Prometheus and Grafana</li>
+                </ul>
+                </li>
+                </article>
+                <article>
+                <li>
+                    Infosys
+                <p><i>Software Engineer  :</i></p>
+                <ul>
+                    <li>Developed and maintained web applications using Java, Spring Boot, and Angular</li>
+                    <li>Collaborated with cross-functional teams to gather requirements and implement features</li>
+                    <li>Performed code reviews and provided feedback to ensure code quality</li>
+                    <li>Participated in Agile development processes, including sprint planning and daily stand-ups</li>
+                </li>
+                </article>
+            </ul>
+    </section>
+<footer id ="connect">
+        <h2 id="connect">Connect</h2>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/pramod-korada" target="_blank">LinkedIn</a></li>
+                <li><a href="https://github.com/pramod1358" target="_blank">GitHub</a></li>
+                <li><a href="mailto:pramodkorada@example.com" target="_blank">Email</a></li>
+                <li><a href="tel:90187654" target="_blank">Phone</a></li>
+                <li><a href="about.html">About Me</a></li>
+            </ul>
+    </footer>
+</body>
+</html>
